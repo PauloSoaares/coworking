@@ -1,0 +1,92 @@
+
+.navbar-toggler {
+	border: none;
+}
+.navbar-toggler:focus {
+	outline: 0;
+}
+
+#f-navbar{
+    display: flex;
+    justify-content: end;
+}
+
+#f-navbar .nav-link {
+	font-size: 16px;
+	color: #000000;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+div.center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar {
+	height: 100px;
+    padding-top: 20px;
+    transition: all 0.30s linear;
+    background-color: #ffffff;
+}
+.navbar.scroll {
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    height: 80px;
+		background: white;	
+}
+.navbar.scroll #f-navbar a {
+	color: rgb(97, 97, 97);
+	font-weight: 500;
+
+}
+.navbar.scroll #f-navbar .nav-link.faca-parte {
+	color: #f6921e;
+
+}
+
+#f-navbar li{
+    margin-right: 20px;
+}
+
+.avatar {
+	background-image: url(../assets/img/preto\ e\ verde\ 1\ 2.svg);
+	padding-top: 90px;
+	background-size: contain;
+	transition: all 0.20s linear;
+	background-repeat: no-repeat;
+	width: 18%;
+	height: 0;
+}
+.navbar.scroll .avatar {
+	background-image: url(../images/logo1.png);
+	width: 170px;
+	padding-top:70px;
+	width: 20%;
+	transition: all 0.20s linear;
+}
+div#f-navbar.nav-item {
+	margin-top: 18px;
+	margin-right: 8px;
+}
+#f-navbar .nav-item:hover .nav-link {
+	color: #d6621e;
+	transition: .5s;
+}
+#f-navbar .nav-item:after {
+	content: '';
+	border-bottom: 2px solid #39857c;
+	display: block;
+	transition: .3s ease;
+	transform: scaleX(0);
+}
+#f-navbar .nav-item:hover:after {
+    transform: scaleX(1);
+}
+#f-navbar .nav-link.faca-parte {
+	color: #f6921e;
+	font-weight: 600;
+}
+#f-navbar .nav-item:hover .nav-link.faca-parte {
+	color: #d6621e;
+}
